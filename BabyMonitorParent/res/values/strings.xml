@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">BabyMonitorParent</string>
+    
+	<string name="settings">Settings</string>
+	
+	<string name="resolution_label">Resolution</string>
+	<string name="resolution_times"> x </string>
+	<string-array name="resolution_array">
+        <item>640x480</item>
+        <item>480x640</item>
+        <item>320x240</item>
+        <item>240x320</item>
+        <item>176x144</item>
+        <item>144x176</item>
+        <item>Custom</item>
+    </string-array>
+
+	<string name="ip_setting_label">Address</string>
+	<string name="port_setting_label">Port</string>
+	<string name="command_setting_label">Command</string>
+	
+	<string name="digits_increment">+</string>
+	<string name="digits_decrement">-</string>
+	<string name="address_dot">.</string>
+	<string name="port_80">80</string>
+	<string name="port_8080">8080</string>
+	<string name="port_80_with_explanation">80 (for Ai-ball)</string>
+	<string name="port_8080_with_explanation">8080 (for IP Webcam)</string>	
+	<string name="command_streaming">\?action=stream</string>
+	<string name="command_videofeed">videofeed</string>
+	<string name="command_streaming_with_explanation">\?action=stream (for Ai-ball)</string>
+	<string name="command_videofeed_with_explanation">videofeed (for IP Webcam)</string>
+	
+	<string name="settings_done">Done</string>
+	<string name="calmdown">Calm</string>
+	<string name="stopalarm">Stop</string>
+</resources>

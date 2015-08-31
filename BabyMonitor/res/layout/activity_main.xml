@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sher.babymonitor.MainActivity" >
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@id/ImageView01"
+        android:text="@string/start" />
+
+    <Button
+        android:id="@+id/StopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/StartButton"
+        android:layout_toRightOf="@id/StartButton"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/ImageView01"
+        android:text="Stop" />
+    
+    <Button
+        android:id="@+id/PlayMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView01"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/StopButton"
+        android:layout_toRightOf="@id/StopButton"
+        android:text="@string/playmusic" />
+    
+     <Button
+        android:id="@+id/StopMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageView01"  
+        android:layout_toEndOf="@id/PlayMusic"      
+        android:layout_toRightOf="@id/PlayMusic"
+        android:text="@string/stopmusic" />
+
+    <LinearLayout
+        android:id="@+id/operation"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StartButton"
+        android:orientation="horizontal" >
+	    <TextView
+	        android:id="@+id/Babycry"
+	        android:layout_width="50dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginStart="0dp"
+	        android:layout_marginLeft="0dp"
+	        android:text=""
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+	    
+	    
+	    <TextView
+	        android:id="@+id/CountTime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/secondsremain"
+	        android:textSize="20sp"
+	        android:textStyle="bold" />
+
+	    <Button
+	        android:id="@+id/CallMom"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:text="@string/callmom" />
+
+    </LinearLayout>
+    
+    <SurfaceView
+        android:id="@+id/camera"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/operation" />
+
+   <TextView
+       android:id="@+id/ip_address"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentLeft="true"     
+       android:layout_alignTop="@id/camera"
+       android:background="@android:color/white" />
+
+</RelativeLayout>

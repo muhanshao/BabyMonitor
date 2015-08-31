@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BabyMonitor</string>
+    <string name="action_settings">Settings</string>
+    <string name="settings">Settings</string>
+    
+    <string name="start">Start</string>
+    <string name="playmusic">StartPlay</string>
+    <string name="stopmusic">StopPlay</string>
+    <string name="callmom">Call</string>
+    <string name="secondsremain">Seconds remaining:</string>
+    
+
+</resources>

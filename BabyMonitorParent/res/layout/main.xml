@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    <Button
+    android:id="@+id/StopMusic"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="39dp"
+    android:layout_marginLeft="39dp"
+    android:text="@string/calmdown" />
+    
+    <Button
+    android:id="@+id/StopAlarm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_toEndOf="@id/StopMusic"
+    android:layout_toRightOf="@id/StopMusic"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:text="@string/stopalarm" />
+    
+    <Button
+	android:id="@+id/StartAlarm"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_toEndOf="@id/StopAlarm"
+    android:layout_toRightOf="@id/StopAlarm"
+    android:layout_marginStart="10dp"
+    android:layout_marginLeft="10dp"
+    android:text="start" />
+
+    <com.camera.simplemjpeg.MjpegView
+        android:id="@+id/mv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StopMusic"
+        android:layout_alignParentBottom="true" />
+        
+</RelativeLayout>
